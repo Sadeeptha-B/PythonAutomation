@@ -1,0 +1,25 @@
+Date: 27/6/2022
+Time: 0:35
+Phone Number: +94718195601
+Message: Hello
+--------------------
+Date: 27/6/2022
+Time: 0:39
+Phone Number: +940718195601
+Message: Hello
+--------------------
+Date: 27/6/2022
+Time: 0:40
+Phone Number: +940718195601
+Message: Hello1
+--------------------
+Date: 27/6/2022
+Time: 0:42
+Phone Number: +940718195601
+Message: Hello1
+--------------------
+Date: 27/6/2022
+Time: 0:45
+Group ID: iPCbMZPbQHHBKIRE7SMp
+Message: Automated msg
+--------------------
