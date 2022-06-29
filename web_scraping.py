@@ -10,6 +10,7 @@
 # //h1/.., ./*, @- Select attribute
 
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from decouple import config
 import pandas as pd
@@ -17,8 +18,12 @@ import pandas as pd
 website = 'https://www.thesun.co.uk/sport/football/'
 path = config('driver_path', default='')
 
+# headless mode
+options = Options()
+options.headless = True
+
 service = Service(executable_path=path)
-driver = webdriver.Chrome(service=service)
+driver = webdriver.Chrome(service=service, options=options)
 driver.get(website)
 
 # Get first occurence - driver.find_element
@@ -39,7 +44,7 @@ for container in containers:
 
 news_items = {'titles':titles, 'subtitles':subtitles, 'links': links}
 df_headlines = pd.DataFrame(news_items)   
-df_headlines.to_csv('headline.csv')
+df_headlines.to_csv('headline-headless.csv')
 
 driver.quit()
 
