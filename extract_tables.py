@@ -18,6 +18,8 @@ df_premier21.rename(columns={'FTHG':'Home_Goals', 'FTAG': 'Away_Goals'}, inplace
 # PDF
 #===================================================
 # Dependencies : tk, ghostscript, camelot-py
+# Ghostscript requires it to be installed on windows and it's bin and lib directories 
+#   to be added to path
 # Read first page. flavor parameter defines parsing method
 # lattice by default. 
 #%%

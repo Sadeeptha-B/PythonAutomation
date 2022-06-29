@@ -1,3 +1,5 @@
 .env
 PyWhatKit_DB.txt
 headline*
+/build
+/dist
